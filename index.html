@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>💚 IMRAN'S PERSONAL SITE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <img src="background4.jpg" alt="background" height="750px" width="1500px">
+    <header>
+      <h1>Hii! 👋</h1>
+      <h1>I'm Imran Shaikh</h1>
+      <p class="headers">Developer and Analyst</p>
+    </header>
+    <article class="container">
+      <img src="photo2-modified.png" alt="Myphoto" width="180" height="180">
+      <h1>HELLO</h1>
+      <h4>I am Data Analyst and Web developer</h4>
+      <p>I am person who loves 💚 to dedicate my time more in work.<br> I love to play football and ride Motorcycle🏍🏍. </p>
+      <hr>
+    </article>
+    <!-- Skills Section -->
+    <div class="Skills">
+      <h1>My Skills</h1>
+      <div class="content">
+        <div class="left">
+          <h1>My  Creative Skills</h1>
+          <p>Hi there. I am a Analyst and Developer. I have excellent skills in Python and its libraries. I am also a Developer with excellent skills in HTML CSS and JAVASCRIPT. I have also learned Excel and PowerBI too. To learn more and to explore about me you can click below!!.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="right">
+          <div class="line">
+            <div class="info">
+              <span>HTML</span>
+              <span>70%</span>
+            </div>
+            <div class="bars html"></div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>Python</span>
+              <span>90%</span>
+            </div>
+            <div class="bars python"></div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>CSS</span>
+              <span>65%</span>
+            </div>
+            <div class="bars css"></div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>JAVASCRIPT</span>
+              <span>60%</span>
+            </div>
+            <div class="bars javascript"></div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>C++</span>
+              <span>80%</span>
+            </div>
+            <div class="bars cpp"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end skills -->
+    <hr>
+    <!-- Projects Section -->
+    <section id ="projects" >
+      <div class="project-heading">
+        <h3>My Projects</h3>
+      </div>
+
+      <!-- Nav bar -->
+      <ul class="project-filter">
+        <li class="list">All</li>
+        <li class="list">Machine Learning</li>
+        <li class="list">Data Science</li>
+        <li class="list">Python</li>
+        <li class="list">Web Development</li>
+      </ul>
+      <!--container--------->
+  <div class="portfolio-container">
+    <!--1------------>
+    <a href="images/b-1.jpg" class="portfolio-box app" data-lightbox="work">
+      <img alt="" src="b-5.jpg">
+    </a>
+    <!--2------------>
+    <a href="images/b-2.jpg" class="portfolio-box app" data-lightbox="work">
+      <img alt="" src="b-2.png">
+    </a>
+    <!--3------------>
+    <a href="images/b-3.jpg" class="portfolio-box appdesign" data-lightbox="work">
+      <img alt="" src="b-3.jpg">
+    </a>
+    <!--4------------>
+    <a href="images/b-4.jpg" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="b-4.jpg">
+    </a>
+    <!--5------------>
+    <a href="images/b-5.jpg" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="b-1.png">
+    </a>
+    </a>
+  </div>
+  </section>
+  <!--js---------------------------------->
+  <script src="js/JQuery.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+    /*blog-filter-menu----------------------------*/
+    $(document).on('click','.portfolio-filter li',function(){
+            $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+        });
+
+     /*portfolio-filter---------------------------------*/
+     $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.portfolio-box').show('1000');
+                }
+                else{
+                    $('.portfolio-box').not('.'+value).hide('1000');
+                    $('.portfolio-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+  </script>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+    	 <div class="footer-container">
+    	 	<div class="footer-row">
+    	 		<div class="footer-col">
+    	 			<h4>company</h4>
+    	 			<ul>
+    	 				<li><a href="#">about us</a></li>
+    	 				<li><a href="#">our services</a></li>
+    	 				<li><a href="#">privacy policy</a></li>
+    	 				<li><a href="#">affiliate program</a></li>
+    	 			</ul>
+    	 		</div>
+    	 		<div class="footer-col">
+    	 			<h4>get help</h4>
+    	 			<ul>
+    	 				<li><a href="#">FAQ</a></li>
+    	 				<li><a href="#">shipping</a></li>
+    	 				<li><a href="#">returns</a></li>
+    	 				<li><a href="#">order status</a></li>
+    	 				<li><a href="#">payment options</a></li>
+    	 			</ul>
+    	 		</div>
+    	 		<div class="footer-col">
+    	 			<h4>online shop</h4>
+    	 			<ul>
+    	 				<li><a href="#">watch</a></li>
+    	 				<li><a href="#">bag</a></li>
+    	 				<li><a href="#">shoes</a></li>
+    	 				<li><a href="#">dress</a></li>
+    	 			</ul>
+    	 		</div>
+    	 		<div class="footer-col">
+    	 			<h4>follow us</h4>
+    	 			<div class="social-links">
+    	 				<a href="https://www.facebook.com/profile.php?id=100053396625424"  target="_blank"><img src="facebook.png"></a>
+    	 				<a href="https://twitter.com/ImranSh40817217" target="_blank"><img src="twitter.png" alt=""></i></a>
+    	 				<a href="https://www.instagram.com/__imraan__10/" target="_blank"></i><img src="insta.jpg" alt=""></a>
+    	 				<a href="https://www.linkedin.com/in/imran-shaikh-5b33a3203/" target="_blank"><img src="linkedin.png" alt=""></i></a>
+    	 			</div>
+    	 		</div>
+    	 	</div>
+    	 </div>
+    </footer>
+  </body>
+</html>
